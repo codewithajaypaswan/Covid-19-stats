@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Corona Tracker Map</title>
+    <script src="js/index.js"></script>
+    <script src="https://kit.fontawesome.com/c939d0e917.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="js/nighttheme.js" id="theme"></script>
+    <script src="js/daytheme.js" id="theme"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="icon" href="images/favicon.ico" type="image/icon type">
+ 
+</head>
+<body>
+    <div class="title">COVID-19 Map</div>
+
+    <div class="link-container">
+        <div class="link-container2">
+            <div class="portfolio">
+                <a href="https://www.linkedin.com/in/ajay-paswan-995214202/" target="_blank">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+            </div>
+            <div class="fb">
+                <a href="https://www.facebook.com/ajay.paswan.754918/" target="_blank">
+                    <i class="fab fa-facebook-square"></i>
+                </a>
+            </div>
+            <div class="github">
+                <a href="https://github.com/codewithajaypaswan" target="_blank">
+                    <i class="fab fa-github"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="search-container">
+        <div class="search">
+            <input type="text" id="country-input" placeholder="Enter COUNTRY" />
+            <i class="fas fa-search" onclick="searchCountry()"></i>
+        </div>
+    </div>
+
+    <div class="stores-list-container">
+        <div class="stores-list">
+
+            <div class="store-container">
+                <div class="store-info-container">
+                    <div class="store-address">
+                        <span>Processing</span>
+                        <span>Please Wait a Sec</span>
+                    </div>
+                    <div class="store-phonenumber">
+                        
+                    </div>
+                </div>
+                <div class="store-number-container"> 
+                    <div class="store-number">
+                    
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="map"></div>
+
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCL4-QNF9PAPzxxDQJ5DRDOHuAEwNKP5mo&callback=initMap">
+    </script>
+</body>
+</html>
